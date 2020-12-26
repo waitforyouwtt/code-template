@@ -14,7 +14,6 @@ public class FeignBuilder {
      * @param modelMap
      */
     public static void builder(Map<String,Object> modelMap){
-        //生成Dao层文件
         BuilderFactory.builder(modelMap,
                 "/template/feign",
                 "Feign.java",

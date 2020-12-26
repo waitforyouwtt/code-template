@@ -4,10 +4,12 @@ import ${package_entity}.${Table};
 import ${package_service}.${Table}Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
+
+import javax.annotation.Resource;
 import java.util.List;
 /**
  * @Author: 凤凰[小哥哥]
@@ -16,9 +18,10 @@ import java.util.List;
  * @Email: 15290810931@163.com
  */
 @Service
+@Slf4j
 public class ${Table}ServiceImpl implements ${Table}Service {
 
-    @Autowired
+    @Resource
     private ${Table}Mapper ${table}Mapper;
 
 

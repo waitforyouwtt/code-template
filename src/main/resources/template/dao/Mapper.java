@@ -1,7 +1,6 @@
 package ${package_mapper};
 import ${package_entity}.${Table};
 import tk.mybatis.mapper.common.Mapper;
-
 /**
  * @Author: 凤凰[小哥哥]
  * @Date: 2020/11/22 17:12
